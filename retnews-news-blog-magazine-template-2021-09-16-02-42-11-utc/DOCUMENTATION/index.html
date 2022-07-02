@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Retnews &#8211; Best news, blog & magazine template </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link href="assets/images/favicon.ico" rel="shortcut icon">
+</head>
+
+<body>
+	<div id="theme-wrapper">
+		<!-- NAVIGATION -->
+		<div id="theme-navigation">
+			<div id="theme-navigation-body">
+				<div id="theme-navigation-heading">
+					<div id="theme-navigation-title">Table of Contents</div>
+					<div class="hidden"><a href="#">Menu</a></div>
+					<div class="clearfix"></div>
+				</div>
+				<div id="theme-navigation-list">
+					<ul>
+						<li><a href="#docA">A) Theme Development Structure</a></li>
+						<li><a href="#docB">B) Node JS & Webpack Instalation and configuration </a></li>
+						<li><a href="#docC">C) SCSS, JS and compile css Files and Structure</a></li>
+						<li><a href="#docD">D) Example Code </a></li>
+						<li><a href="#credits">E) Credits</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- NAVIGATION -->
+
+		<!-- CONTENT -->
+		<div id="theme-content">
+			<img src="assets/images/logo1.png" alt="">
+			<div id="theme-content-heading">Best news, blog & magazine template - Documentation</div>
+			<div id="theme-content-info">
+				<div id="theme-content-info-created">
+					<div id="theme-content-info-created-body">
+						Created: 18/04/2020<br />
+						By: Mardianto<br />
+						Email: <a href="mailto:mardianto718@gmail.com">mardianto718@gmail.com</a>
+					</div>
+				</div>
+				<div id="theme-content-info-description">
+					<div id="theme-content-info-description-body">
+						Thank you for purchasing my theme. If you have any questions that are beyond the scope of this
+						help file, please feel free to email via my user page contact form <a
+							href="https://themeforest.net/user/mardianto">here</a>. Thanks so much!
+					</div>
+				</div>
+			</div>
+
+			<div id="theme-content-body">
+				<h3 id="docA">A) Theme Development Structure </h3>
+				<p>
+					<strong>Retnews </strong> is a responsive HTML news, blog, magazine template The user can use by
+					especially magazine, blog & newspaper
+					for online. Retnews comes with many features for some popular topics like business, fashion, game,
+					entertainment,
+					lifestyle, sport, technology, politics, travel, weather, video etc. section. <br>
+					and front-end developers build websites based on advance technologies.
+				</p>
+
+
+
+				<h3>Folder Structure</h3>
+				<p><img src="assets/images/htmlstructure.png" /></p>
+
+				<h3>How to run project</h3>
+				<p><b>Installation
+						Build commands <span style="color:red;">note</span> if you finish instalation node js and
+						webpack</b>
+					<pre>yarn install or npm install</pre>
+					you can choice one command to run project using <b>yarn or npm</b>
+				</p>
+
+				<p>
+					<table>
+						<tbody>
+							<tr>
+								<th>Terminal</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<pre>yarn start or npm run start</pre>
+								</td>
+								<td>compile assets when file changes are made, start webpack-dev-server
+									session</td>
+							</tr>
+							<tr>
+								<td>
+									<pre>yarn build or npm run build</pre>
+								</td>
+								<td>compile and optimize (the files in your assets directory) for
+									production</td>
+							</tr>
+							<tr>
+								<td>All Build command you can check filename <b>package.json</b> and right image </td>
+								<td><img src="assets/images/command-build.png" /></td>
+							</tr>
+
+						</tbody>
+					</table>
+				</p>
+				<hr />
+
+				<h3 id="docB">B) Node JS & Webpack Instalation and configuration</h3>
+				<p>You can Installing Node.js via package manager this link here <a
+						href="https://nodejs.org/en/download/package-manager/#windows">Node JS</a>
+					if your computer has already installed node js, please ignore this. To ensure that NodeJS is
+					installed properly you can check on terminal <br>
+					<pre>/* === Check instalation node js === */
+node -v
+npm -v</pre>
+
+					Instalation webpack please check this <a href="https://webpack.js.org/guides/installation/">webpack
+						instalation</a>
+
+
+					<br>
+
+					You can see the full code in the folder mainfile/myworkflow and filename <b>webpack.config.js</b>
+					you can
+					check structure folder
+				</p>
+				<h3>Configuration webpack Example</h3>
+				<p><img src="assets/images/webpack-config1.png" />
+
+				</p>
+
+				<hr />
+
+				<h3 id="docC">C) SCSS, JS and compile css Files and Structure</h3>
+				<p>This theme Myworkflow structure, and file scss, Jquery and Javascript files.</p>
+				<h4>Development theme</h4>
+				<P>
+					<img src="assets/images/DEVELOPMENT-SOURCE.png" alt="">
+
+
+				</P>
+				<h4>Production theme</h4>
+				<p>
+					<img src="assets/images/PRODUCTION-SOURCE.png" alt="">
+				</p>
+
+
+				<hr />
+
+				<h3 id="docD">D) Example Code</h3>
+				<p>I've example codes are commented properly so it’s easily customizable:
+
+				</p>
+				<p>
+					<img src="assets/images/Example.png" alt="">
+				</p>
+
+				<ol>
+					<li>All vendor js
+						<p> <img src="assets/images/js.png" alt=""></p>
+					</li>
+					<li>Import all vendor Javascript/jquery library.</li>
+					<li>My custom scripts, please see the image above and fileneme <strong>app.js</strong></li>
+
+
+					<li>
+						Example code my custom script filename <strong>app.js</strong> and all codes are commented
+						properly so it’s easily customizable:
+						<pre>
+// ------------------------------------------------------------------------------ //
+// Loading
+// ------------------------------------------------------------------------------ //
+$(".loading-container").delay(400).fadeOut();
+$(".animationload").delay(400).fadeOut("fast");
+// ------------------------------------------------------------------------------ //
+// Navigation scroll
+// ------------------------------------------------------------------------------ //
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 50) {
+
+		$(".navbar-soft").addClass("fixed-top");
+	} else {
+		$(".navbar-soft").removeClass("fixed-top");
+
+	}
+});
+						
+/*=============================
+Card post carousel
+=============================*/
+$(".card__post-carousel").slick({
+slidesToShow: 1,
+autoplay: true,
+dots: false,
+lazyLoad: "progressive",
+prevArrow:
+  "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+nextArrow:
+  "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+});
+
+
+</pre>
+					</li>
+
+				</ol>
+				<hr />
+
+				<h3 id="credits">E) Sources and Credits</h3>
+
+				<p>I've used the following images.
+
+					<ul>
+						<li><a href="https://unsplash.com/" target="_blank">Unplash</a></li>
+						<li><a href="https://pixabay.com/id/" target="_blank">Pixabay</a></li>
+						<li><a href="https://pixabay.com/id/" target="_blank">Pexels</a></li>
+						<li><a href="#">shutterstock</a></li>
+
+					</ul>
+
+					<p>
+						I've used credits library.
+						<ul>
+							<li><a href="http://getbootstrap.com/" target="_blank" rel="nofollow">Bootstrap 4</a></li>
+							<li><a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow"
+									target="_blank">Fontawesome</a></li>
+							<li><a href="https://jquery.com/" rel="nofollow" target="_blank">Jquery</a></li>
+							<li><a href="https://kenwheeler.github.io/slick/" target="_blank">Slick js</a></li>
+							<li><a href="#" target="_blank">menu kit</a></li>
+							<li><a href="https://abouolia.github.io/sticky-sidebar/" target="_blank">sticky sidebar</a>
+							</li>
+
+
+						</ul>
+
+					</p>
+					<hr />
+					<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad
+						to help you if you have any questions relating to this theme. No guarantees, but I'll do my best
+						to assist. If you have a more general question relating to the themes on ThemeForest, you might
+						consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+
+					<p class="append-bottom"> <a href="mailto:mardianto718@gmail.com" target="_blank">Mardianto</a></p>
+
+					<a href="#">Back to Top</a>
+
+					<hr class="space" />
+				</p>
+			</div>
+		</div>
+		<!-- CONTENT -->
+	</div>
+
+	<!-- JS -->
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+
+</html>

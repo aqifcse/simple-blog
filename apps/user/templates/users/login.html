@@ -1,0 +1,59 @@
+{% extends 'users/user_base.html' %}
+
+{% block search %}{% endblock %}
+{% block search-sidebar %}{% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<section class="wrap__section">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Form Login -->
+                <div class="card mx-auto" style="max-width: 380px;">
+                    <div class="card-body">
+                        {% if form.non_field_errors %}
+                        <div class="alert alert-{{ active.tags }}">
+                        {{ form.non_field_errors }}
+                        </div>
+                        {% endif %}
+                        <h4 class="card-title mb-4">Sign in</h4>
+                        <form method="post" action="{% url 'user:login' %}">
+
+                            {% csrf_token %}
+                            <input type="hidden" name="user_type" value="user" />
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Email" type="text" name="username">
+                            </div>
+                            <!-- form-group// -->
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Password" type="password" name="password">
+                            </div>
+                            <!-- form-group// -->
+                            <!-- form-group// -->
+                            <div class="form-group">
+                                <a href="#" class="float-right">Forgot password?</a>
+                                <!-- <label class="float-left custom-control custom-checkbox"> <input type="checkbox"
+                                    class="custom-control-input" checked="">
+                                <span class="custom-control-label"> Remember </span> -->
+                                </label>
+                            </div>
+                            <!-- form-group form-check .// -->
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block"> Login </button>
+                            </div>
+                            <!-- form-group// -->
+                        </form>
+                    </div>
+                    <!-- card-body.// -->
+                </div>
+                <!-- card .// -->
+                <p class="text-center mt-4">Don't have account? <a href="{% url 'user:register' %}">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end login -->
+{% endblock %}
