@@ -2,7 +2,7 @@ repo_name: aqifcse/simple-blog
 report_id: c09f3306210ff82cc5baa5f801ecb6f3
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-11T14:22:39+00:00'
+timestamp: '2024-02-29T19:26:36+00:00'
 requested_by: aqifcse
 provider: github
 branch: main
@@ -109,12 +109,6 @@ tools:
     detected_date: Apr 27
     severity: critical
     first_patched: 4.0.4
-  - name: Django has regular expression denial of service vulnerability in EmailValidator/URLValidator
-    cve_id: CVE-2023-36053
-    cve_url: https://github.com/advisories/GHSA-jh3w-4vvf-mjgr
-    detected_date: Jul 6
-    severity: high
-    first_patched: 4.1.10
   - name: 'Django vulnerable to Reflected File Download attack '
     cve_id: CVE-2022-36359
     cve_url: https://github.com/advisories/GHSA-8x94-hmjh-97hq
@@ -127,6 +121,12 @@ tools:
     detected_date: Feb 16
     severity: high
     first_patched: 4.0.10
+  - name: Django has regular expression denial of service vulnerability in EmailValidator/URLValidator
+    cve_id: CVE-2023-36053
+    cve_url: https://github.com/advisories/GHSA-jh3w-4vvf-mjgr
+    detected_date: Jul 6
+    severity: high
+    first_patched: 4.1.10
 - name: asgiref
   description: ASGI specs, helper code, and adapters
   package_url: https://pypi.org/project/asgiref
